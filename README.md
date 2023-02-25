@@ -59,3 +59,10 @@
 - Many algorithms created only need CPU to run it. This type of algorithm usually very dependent on CPU speed
 - The most popular example is Machine Learning. Therefore, there is so many or them using GPU because has more cores than CPU normally
 - This type of algorithm there is no benefit when using Concurrency Programming, but can help with implementation of Parallel Programming
+
+### I/O Bound
+- I/O bound is the opposite of before, where algorithm or application usually dependent to speed of input output device we used
+- Example of this application we can read data from file, database, etc
+- Most of the time, we usually create application like this
+- Type of application with I/O bound, although usually helped with implementation Parallel Programming but has more benefits if we use Concurrency Programming
+- Imagine we read data from database, and Thread has to wait 1 second to get data from database, whereas with 1 second if we use Concurrency Programming, bwe can use it to do another task
