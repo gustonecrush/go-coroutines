@@ -66,3 +66,12 @@
 - Most of the time, we usually create application like this
 - Type of application with I/O bound, although usually helped with implementation Parallel Programming but has more benefits if we use Concurrency Programming
 - Imagine we read data from database, and Thread has to wait 1 second to get data from database, whereas with 1 second if we use Concurrency Programming, bwe can use it to do another task
+
+## Introduction to Goroutines
+
+### Introduction to Goroutines
+- Goroutine is a light thread which managed by Go Runtime
+- Size of Goroutine is so small, around 2kb, smaller than Thread that cn arrive to 1mb or 1000kb
+- But not like thread runned parallely, goroutine run concurrently
+
+###
