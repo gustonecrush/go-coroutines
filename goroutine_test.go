@@ -3,6 +3,7 @@ package golang_coroutines
 import (
 	"fmt"
 	"testing"
+	"time"
 )
 
 func RunHelloWorld() {
@@ -12,4 +13,6 @@ func RunHelloWorld() {
 func TestCreateGoroutine(t *testing.T) {
 	go RunHelloWorld()
 	fmt.Println("Ups")
+
+	time.Sleep(1 * time.Second)
 }
