@@ -82,3 +82,11 @@
   - G: Goroutine
   - M: Thread(Machine)
   - P: Processor
+
+## Create Goroutine
+
+### Create Goroutine
+- To create goroutine in Golang is very simple
+- We only need to add command go before we call function we run in goroutine
+- When a function we run in goroutine, function will run asynchronously, means not will be waited until that function is done
+- Application will continue running to next code program without waiting goroutine we created is done
