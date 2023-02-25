@@ -90,3 +90,35 @@
 - We only need to add command go before we call function we run in goroutine
 - When a function we run in goroutine, function will run asynchronously, means not will be waited until that function is done
 - Application will continue running to next code program without waiting goroutine we created is done
+
+## Introduction to Channel
+
+### Introduction to Channel
+- Channel is a place to communicate synchronously can do in goroutine, used for return value if we use goroutine
+- In Channel there is sender and receiver, sender and receiver usually is different goroutine
+- When sending data to channel, goroutine will be blocked until there is receiver data
+- Therefore, channel called as communication tool synchronous (blocking)
+- Channel is very suit as alternative as async await mechanism which in other programming language
+
+### Characteristic Channel
+- Channel only store one data as default, if we want to add more data we have to wait data in channel is taken by other goroutine
+- Channel only can receive one type of data
+- Channel can be taken more than one goroutine
+- Channel must be closed if we don't use it anymore, or can cause memory leak
+
+## Create Channel
+
+### Create Channel
+- Channel in Go-Lang represent with data type chan
+- To create channel we can use make(), like map
+- Bu we have to determine data type
+
+### Code: Create Channel
+```go
+channel := make(chan string)
+```
+
+### Send and Receive Data from Channel
+- To send data, we can use code: channel <- data
+- Whereas to receive data, we can use code: data <- channel
+- If finished, don't forget to close channel using function close()
