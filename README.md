@@ -38,7 +38,7 @@
         <td>Thread consume small memory</td>
     </tr>
     <tr>
-        <td>Process is connected and isolated with other process</td>
+        <td>Process is isolated each other</td>
         <td>Thread can connect each other if there is in one process</td>
     </tr>
     <tr>
@@ -46,3 +46,7 @@
         <td>Thread is fast to runned or stopped</td>
     </tr>
 </table>
+
+### Parallel vs Concurrency
+- Different with parallel (running some tasks simultaneously), concurrency is running some tasks alternately
+- In parallel, we usually need a lot of Thread whereas in concurrency, we only need few Thread  
