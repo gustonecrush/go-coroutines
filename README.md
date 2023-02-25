@@ -50,3 +50,9 @@
 ### Parallel vs Concurrency
 - Different with parallel (running some tasks simultaneously), concurrency is running some tasks alternately
 - In parallel, we usually need a lot of Thread whereas in concurrency, we only need few Thread  
+- Gollang is default as concurrency, but we are running at multicore so it is mix of concurrency and parallel
+
+### Real Case Concurrency
+- When we are eating in caffe, we can eat, then talk, we drink, eat again, talk again, drink again, etc. But we can not do it simultaneously drink, eat, and talk, we only can do one thing in a time, but we can do it alternately whenever we want
+
+### CPU-Bound
