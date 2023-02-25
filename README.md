@@ -72,6 +72,13 @@
 ### Introduction to Goroutines
 - Goroutine is a light thread which managed by Go Runtime
 - Size of Goroutine is so small, around 2kb, smaller than Thread that cn arrive to 1mb or 1000kb
-- But not like thread runned parallely, goroutine run concurrently
+- But not like thread run parallely, goroutine run concurrently
 
-###
+### How Goroutine Works
+- Actually, Goroutine is run by Go Scheduler in thread, where number or thread as much GOMAXPROCS (as much core CPU usually)
+- So actually can't say Goroutine is replacement of Thread, because Goroutine itself run on Thread
+- But what makes it easier for us is we don't need to manage Thread manually, all is set up by Go Scheduler
+- There is some terms that you need to know :
+  - G: Goroutine
+  - M: Thread(Machine)
+  - P: Processor
